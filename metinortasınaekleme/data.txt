@@ -1,0 +1,8 @@
+4100 Internalmalfunctionofthecontrolunit
+3105 Internalmalfunctionofthecontrolunit
+2201 Airbag malfunction on the driver's side has a short circuit fault.
+1202 The airbag on the driver's side has an open circuit fault.
+0203 The airbag on the driver's side has a fault "Short circuit" to ground.
+0204 The airbag on the driver's side has a fault "Short circuit" to positive.
+0205 The capacity of the driver's airbag ignition circuit is too large.
+0206 The capacity of the pilot airbag pilot circuit is too low.
