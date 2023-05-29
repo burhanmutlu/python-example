@@ -4,7 +4,7 @@ import numpy as np
 
 width = 591; height=591
 
-img = cv2.imread("orginal.jpg",1)
+img = cv2.imread("org.jpg",1)
 sifreli = np.zeros([width,height,3],dtype=np.uint8)
 
 org = cv2.resize(img, (width,height))
