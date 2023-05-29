@@ -6,8 +6,6 @@ Created on Mon May 29 12:04:22 2023
 """
 
 import cv2
-import random
-import numpy as np
 
 def mod_hesapla(val):
     while 1:
