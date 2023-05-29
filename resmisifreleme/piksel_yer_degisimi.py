@@ -5,7 +5,6 @@ Created on Mon May 29 12:04:22 2023
 @author: Burhan Mutlu
 """
 
-from turtle import width
 import cv2
 import random
 import numpy as np
@@ -25,7 +24,6 @@ height= img.shape[0];
 width= img.shape[1];
 
 cv2.imshow("orginal:", img)
-
 
 N = 13
 for i in range(width):
