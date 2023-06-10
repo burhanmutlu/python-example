@@ -30,11 +30,16 @@ class ResimSifreleme:
         if k==ord('q'):
             cv2.destroyAllWindows()
             
+    def saveImage(self, name, image):
+        cv2.imwrite(name, image) 
+            
     def imageEncryption(self):
         encrypted = self.getImage()
         for i in range(self.width):
             for j in range(self.height):
                 encrypted[j, i ] = self.org[j,i] * self.N        
+            
+        self.saveImage("sifreli.png", encrypted)
         return encrypted
     
     def imageDecryption(self):
@@ -43,6 +48,8 @@ class ResimSifreleme:
             for j in range(self.height):
                 val = self.mod_hesapla( decrypted[j,i] )
                 decrypted[j, i ] = val
+                
+        self.saveImage("cozulmus.png", decrypted)
         return decrypted
     
     def mod_hesapla(self, val):

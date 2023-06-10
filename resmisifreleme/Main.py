@@ -7,10 +7,12 @@ Created on Mon May 29 14:28:47 2023
 
 from moduleFile import ResimSifreleme
 
-p = ResimSifreleme("org.jpg", 0)
+#p = ResimSifreleme("org.jpg", 0)
 
-sifreli = p.imageEncryption()
-p.PrintImage(sifreli, "sifreli")
+p = ResimSifreleme("sifreli.png", 0)
+
+# sifreli = p.imageEncryption()
+# p.PrintImage(sifreli, "sifreli")
 
 
 cozulmus = p.imageDecryption()
