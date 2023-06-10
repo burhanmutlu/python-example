@@ -38,7 +38,7 @@ def upload_file():
             process = int(request.args.get('process'))
 
             p = ResimSifreleme(os.path.join(app.config['UPLOAD_FOLDER'], filename), 0)
-            print("--------------------------",process)
+            
             if(process == 1):
                 img = p.imageEncryption()
             if(process == 2):
