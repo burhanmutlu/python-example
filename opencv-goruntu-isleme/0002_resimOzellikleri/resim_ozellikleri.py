@@ -21,6 +21,10 @@ cv2.imshow("roi", ROI)
 
 img[200:400,100:250]=ROI #resmin belli noktalarına roiyi kopyala
 
+""" b,g,r=cv2.split(img) bu sistemi yoruyor
+img=cv2.merge((b,g,r)) """
+
+img[:,:,2]=0 #0 1 2 kırmızı değerleri sildi 0 yaptı
 
 cv2.imshow('resim',img)
 cv2.waitKey()
